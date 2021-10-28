@@ -113,8 +113,8 @@ ul > li {
 }
 
 a:-webkit-any-link {
-  border: 1px solid blue;
-  color: orange;
+  color: yellow;
+  cursor:auto;
 }
 
 .me-footer .declaration,
