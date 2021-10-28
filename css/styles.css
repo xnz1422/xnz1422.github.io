@@ -108,13 +108,8 @@ ul > li {
 }
 
 .me-menu a:hover {
-    color:yellow;
+    color:yellow !important;
     font-weight: bold;
-}
-
-a:-webkit-any-link {
-  color: yellow;
-  cursor:auto;
 }
 
 .me-footer .declaration,
