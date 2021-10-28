@@ -26,8 +26,6 @@ body {
 /* Subcontenedores principales */
 
 .me-container .me-header {
-    position:absolute;
-    right:13%;
     background-color: transparent hsl(196, 100%, 30%);
     grid-area: header;
     padding: 5px 20px;
@@ -108,15 +106,15 @@ ul > li {
 }
 
 .me-menu a:hover {
-    color:yellow !important;
+    color:yellow;
     font-weight: bold;
 }
 
 .me-footer .declaration,
 .me-footer .copyright {
     font-size: 0.8em;
-
 }
+
 .me-footer .declaration p{
     line-height: 1.1em;
 }
