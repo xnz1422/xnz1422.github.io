@@ -1,0 +1,235 @@
+body {
+    background-color: #001B63;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* Contenedor principal 3 columnas x 4 lineas */
+
+.me-container {
+    display:grid;
+    gap: 0px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,auto);
+    grid-template-areas:"main main main"
+                        "header header header"
+                        "sidebar sidebar sidebar"
+                        "footer footer footer";
+    width: 95%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding:0px;
+}
+
+/* Subcontenedores principales */
+
+.me-container .me-header {
+    position:absolute;
+    right:20%;
+    background-color: transparent hsl(196, 100%, 30%);
+    grid-area: header;
+    padding: 5px 20px;
+}
+
+.me-container .me-main {
+    grid-area:main;
+    margin: 0px;
+}
+.me-container .me-sidebar {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    grid-area:sidebar;
+    background-color:#008DC2;
+    padding: 5px;
+}
+.me-container .me-widget {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color:#EA8CFA;
+    grid-area:widget;
+}
+
+.me-container .me-footer {
+    background-color:#B389E0;
+    grid-area:footer;
+    padding: 10px 20px;
+}
+
+.me-sidebar img {
+    width:35px;
+    height:35px;
+}
+
+.me-logo {
+    position:absolute;
+    margin: 10px;
+    width: 100px;
+    height: 70px;
+}
+ 
+.video-portada {
+    opacity: 1; 
+    width: 100%;
+    height: auto; 
+    margin:0px;
+}
+ul > li {
+   display: inline-block;
+   list-style-type: none; 
+   text-justify:auto;
+}
+
+.me-menu a {
+    font-size: 20px;
+    text-decoration: none;
+    color: aliceblue ;
+    padding:5px;
+    margin-top:5px;
+}
+
+.me-menu a:hover {
+    color:yellow;
+    font-weight: bold;
+}
+
+.copyright {
+    text-align: right;
+    font-size: 0.8em;
+}
+
+#side-item-element-1 {
+    width: 100%;
+    height: 100%;
+    background: url("../img/me_elements_color.svg") no-repeat 0 0;
+    animation: me_elements 10s linear infinite;
+}
+
+/* animacion dea elementos coloreandose en la pagina "mapa.html" */
+
+@keyframes me_elements {
+    0% {
+    background: url("../img/me_elements_color.svg") no-repeat 0 0;
+    }
+    30% {
+    background: url("../img/me_elements_color_0.svg") no-repeat 0 0;
+    }
+    40% {
+    background: url("../img/me_elements_color_1.svg") no-repeat 0 0;
+    }
+    50% {
+    background: url("../img/me_elements_color_2.svg") no-repeat 0 0;
+    }
+    60% {
+    background: url("../img/me_elements_color_3.svg") no-repeat 0 0;
+    }
+    70% {
+    background: url("../img/me_elements_color_4.svg") no-repeat 0 0;
+    }
+    80% {
+    background: url("../img/me_elements_color_5.svg") no-repeat 0 0;
+    }
+    90% {
+    background: url("../img/me_elements_color_full.svg") no-repeat 0 0;
+    }
+}
+
+
+.me-main-map {
+    width:100%;
+    height:100%;
+}
+iframe {
+     width:"900px";
+     height:"600px";
+}
+
+/* REDES SOCIALES */
+.me-redes-bar {
+    display:grid;
+    position: fixed;
+    background-color: RGBA(0,159,217,0.18);
+    width:70px;
+    bottom: 0px;
+    left:2px;
+    text-align: center;
+    font-size: 40px;
+    padding: 5px;
+}
+
+.me-redes li {
+    display: flex;
+    justify-content: center;
+}
+.me-redes i {
+    color: white;
+}
+
+.fab:first-child:hover {
+    padding: 0 0 0 10px;
+}
+
+/* iframe */
+.me-iframe {
+  width: 1000px;
+  height:auto;
+  padding-top: 56.25%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.me-mapa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Media Querys*/
+
+@media only screen and (max-width: 768px) {
+    .me-container {
+        grid-template-areas:"header header header"
+                        "main main main"
+                        "widget sidebar sidebar"
+                        "footer footer footer";
+    }
+    .me-redes-bar {
+        display:none;
+    }
+    .me-container .me-header {
+        position:relative;
+        right: auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .me-container {
+        grid-template-areas:"header header header"
+                    "main main main"
+                    "widget widget widget" 
+                    "sidebar sidebar sidebar"
+                    "footer footer footer";
+    }
+    .me-redes-bar {
+        display:none;
+    }
+    .me-container .me-header {
+        position:relative;
+        right: auto;
+    }
+    .me-menu a {
+        font-size: 15px;
+    }
+    .me-iframe {
+        width:auto;
+        min-width:380px;
+        height: 100%;
+        /*padding-top: 56.25%;*/
+    }
+}
