@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
-    
+
     <title>Maestria Elemental</title>
 </head>
 
@@ -28,45 +28,47 @@
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="./mapa.html">Mapa Interactivo</a></li>
                     <li><a href="./guias.html">Guias</a></li>
-                    <li><a href="/registro.html">Registro</a></li>
+                    <li><a href="./registro.html">Registro</a></li>
                 </ul>
             </nav>
         </header>
         <main class="me-main">
-            <div class="me-logo"><a href="../index.html"><img class="me-logo-img" alt="logo" src="../img/maestria_logo.svg"></a></div>
-            <form id="formu-Registro">
-      <h1>Registrate</h1>
-  <div class="form-group">
-    <label for="exampleInputUser">Usuario</label>
-    <input type="text" id="exampleInputUser" class="form-control" aria-describedby="emailUser" placeholder="JuanPerez">
-    <small id="emailUser" class="form-text text-muted"> Elige un nombre de usuario para tu cuenta</small>
-  </div>
-  <br>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Contraseña</label>
-    <input type="password" class="form-control" id="exampleInputPassword" placeholder="*************">
-    <small id="emailpass" class="form-text text-muted"> Elige una contraseña.</small>
-  </div>
-  <br>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Direccion de mail</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="JuanPerez@ejemplo.com">
-    <small id="emailHelp" class="form-text text-muted"> Nunca compartiremos tu direccion de mail con nadie mas.</small>
-  </div>
-  <br>
-  <div><button type="submit" class="btn btn-primary">Registrarse</button></div>
-<div id="error"></div>
-</form>
+            <div class="me-logo"><a href="../index.html"><img class="me-logo-img" alt="logo"
+                        src="../img/maestria_logo.svg"></a></div>
+            <div class="me-formulario">
+                <form id="formu-Registro">
+                    <h1 class="form-title">Registrate</h1>
+                    <div class="form-group">
+                        <label for="exampleInputUser" class="label-title">Usuario</label>
+                        <input type="text" id="exampleInputUser" class="form-control" aria-describedby="emailUser"
+                            placeholder="JuanPerez">
+                        <small id="emailUser" class="form-text text-muted"> Elige un nombre de usuario para tu
+                            cuenta</small>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1" class="label-title">Contraseña</label>
+                        <input type="password" class="form-control" id="exampleInputPassword"
+                            placeholder="*************">
+                        <small id="emailpass" class="form-text text-muted"> Elige una contraseña.</small>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1" class="label-title">Direccion de mail</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="JuanPerez@ejemplo.com">
+                        <small id="emailHelp" class="form-text text-muted"> Nunca compartiremos tu direccion de mail con
+                            nadie mas.</small>
+                    </div>
+                    <br>
+                    <div><button type="submit" class="btn btn-primary">Registrarse</button></div>
+                    <div id="error"></div>
+                </form>
+            </div>
         </main>
-        <nav class="me-sidebar">
-        <h4>Disponible en la siguientes plataformas<h4><br>
-            <ul class="me-stores">
-                <li><a href="https://www.apple.com/app-store/" target="_blank"><div class="side-item"><img src="../img/apple_logo_me.svg"></div></a></li>
-                <li><a href="https://store.playstation.com/en-us/" target="_blank"><div class="side-item"><img src="../img/ps_logo_me.svg"></div></a></li>
-                <li><a href="https://play.google.com/store/" target="_blank"><div class="side-item"><img src="../img/google_play_logo_me.svg"></div></a></li>
-                <li><a href="https://www.microsoft.com/es-ar/store/apps/windows/" target="_blank"><div class="side-item"><img src="../img/ms_logo_me.svg"></div></a></li>
-            </ul>
-        </nav>
+        <div class="me-sidebar">
+            <div id="side-item-element"></div>
+        </div>
         <aside class="me-widget">
             <ul class="me-redes-bar me-redes">
                 <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
@@ -78,16 +80,20 @@
         <footer class="me-footer">
             <div class="declaration">
                 <p>"PlayStation Family Mark," "PS5 logo" and "PS4 logo" are registered trademarks or
-                trademarks of Sony
-                Interactive Entertainment Inc.</p>
-                <p>Epic, Epic Games, Epic Games Store, the Epic Games Store logo, and Epic Online Services are trademarks
-                and/or registered trademarks of Epic Games.</p><p>All other trademarks are the property of their respective
-                owners."</p>
+                    trademarks of Sony
+                    Interactive Entertainment Inc.</p>
+                <p>Epic, Epic Games, Epic Games Store, the Epic Games Store logo, and Epic Online Services are
+                    trademarks
+                    and/or registered trademarks of Epic Games.</p>
+                <p>All other trademarks are the property of their respective
+                    owners."</p>
             </div>
-            <div class="copyright"><p>&copy; Copyright 2021 All Rights Reserved </p></div>
+            <div class="copyright">
+                <p>&copy; Copyright 2021 All Rights Reserved </p>
+            </div>
         </footer>
     </div>
-    <script type="text/javascript" src="../js/validacion.js"></script> 
+    <script type="text/javascript" src="../js/validacion.js"></script>
 </body>
 
 </html>
