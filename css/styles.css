@@ -13,8 +13,8 @@ body {
     gap: 0px;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(4,auto);
-    grid-template-areas:"main main main"
-                        "header header header"
+    grid-template-areas:"header header header"
+                        "main main main"
                         "sidebar sidebar sidebar"
                         "footer footer footer";
     width: 95%;
@@ -28,7 +28,7 @@ body {
 .me-container .me-header {
     background-color: transparent hsl(196, 100%, 30%);
     grid-area: header;
-    padding: 5px 20px;
+    padding: 0px auto;
 }
 
 .me-container .me-main {
@@ -71,26 +71,15 @@ body {
     height: 70px;
 }
  
-/*.video-container {
-    position: relative;
-    padding-bottom:70%;
-    padding-top:0px;
-    height: 0;
+.video-container {
     overflow: hidden;
-}*/
+}
 .video-portada {
-    /*position:absolute;*/
     top: 0;
     left: 0;
     width: 100%;
     height: 100%; 
 }
-/*.video-portada {
-    opacity: 1; 
-    width: 100%;
-    height: auto; 
-    margin:0px;
-}*/
 ul > li {
    display: inline-block;
    list-style-type: none; 
