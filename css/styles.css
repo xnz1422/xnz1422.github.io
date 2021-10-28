@@ -111,6 +111,12 @@ ul > li {
     color:yellow;
     font-weight: bold;
 }
+
+a:-webkit-any-link {
+  border: 1px solid blue;
+  color: orange;
+}
+
 .me-footer .declaration,
 .me-footer .copyright {
     font-size: 0.8em;
